@@ -350,9 +350,9 @@ ul.list-check li::before {
 }
 
 .intro h1{
-	font-size: 60px;
+  font-size: 60px;
 	line-height: 80px;
-	margin-bottom: 16px;
+    margin-bottom: 16px;
 	color: #52b3d9;
 }
 .intro h1 span{
@@ -1776,13 +1776,46 @@ Icon for all respective meta
 .intro h1.typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #52b3d9; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    white-space: nowrap; /*Keeps the content on a single line
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
+
+  @media (max-width : 1400px)  and (min-width : 1024px) {
+    .intro h1.typewriter {
+        font-size: 45px;
+        line-height: 50px;
+	    margin-bottom: 16px;
+      }
+}
+
+
+@media (max-width : 1023px)  and (min-width : 768px) {
+    .intro h1.typewriter {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 16px;
+      }
+}
+
+@media (max-width : 767px)   and (min-width : 375px) {
+    .intro h1.typewriter {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 16px;
+      }
+}
+
+@media (max-width : 374px) {
+    .intro h1.typewriter {
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 16px;
+      }
+}
 
 /* The typing effect */
 @keyframes typing {

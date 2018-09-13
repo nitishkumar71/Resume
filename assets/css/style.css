@@ -612,6 +612,17 @@ SOCIAL ICON
     border-bottom:1px solid #EEEEEE;
 }
 
+.biography ul li ul{
+    padding: 0px;
+}
+
+.biography ul li ul.list-inline li{
+    padding:5px 0;
+    margin-left: 5px;
+    font-size: 16px;
+    border-bottom: 0px;
+}
+
 .biography ul li:last-child{
     border-bottom:0;
 }
